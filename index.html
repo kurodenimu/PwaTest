@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <link rel="stylesheet" href="contents/destyle.css" type="text/css">
+    <link rel="stylesheet" href="contents/style.css" type="text/css">
+    <link rel="manifest" href="manifest.json">
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('serviceWorker.js')
+                .then(
+                    function (registration) {
+                        if (typeof registration.update == 'function') {
+                            registration.update();
+                        }
+                    })
+                .catch(function (error) {
+                    console.log("Error Log: " + error);
+                });
+        }
+    </script>
+</head>
+
+<body>
+    <p>Pwa Test</p>
+</body>
+
+</html>

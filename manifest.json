@@ -1,0 +1,13 @@
+{
+    "short_name": "PWA Test",
+    "name": "PWA Test app",
+    "display": "standalone",
+    "start_url": "index.html",
+    "icons": [
+        {
+            "src": "contents/profile.png",
+            "sizes": "140x140",
+            "type": "image/png"
+        }
+    ]
+}
