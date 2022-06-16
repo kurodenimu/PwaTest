@@ -6,7 +6,7 @@
     "icons": [
         {
             "src": "contents/profile.png",
-            "sizes": "140x140",
+            "sizes": "192x192",
             "type": "image/png"
         }
     ]
